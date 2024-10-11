@@ -38,6 +38,8 @@ with col2:
     # dropoff = st.text_input("To (zipcode)", value="11238")
     # d = data[(data['pickup_zip'] == int(pickup)) & (data['dropoff_zip'] == int(dropoff))]
     # st.write(f"# **${d    ['fare_amount'].mean() if len(d) > 0 else 99:.2f}**")
-    st.image(image_path)
+    files = os.listdir(image_path)
+    st.write(files)
+    # st.image(image_path)
 
 # st.dataframe(data=data, height=600, use_container_width=True)
